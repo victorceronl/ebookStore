@@ -1,0 +1,212 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    color: black;
+}
+h2{
+    font-size: 2.6rem;
+    margin: 0;
+}
+
+p{
+     font-size: 1.4rem;
+    margin: 0.5rem 0;
+}
+header {
+    background-color: #131313;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+.portadaIndex{
+    width: 160px;
+    height: auto;
+    border-radius: 7px;
+    margin-right: 10px;
+}
+
+.carousel {
+    display: flex;
+    overflow-x: auto;
+    gap: 10px;
+}
+
+.carousel-item {
+    width: 160px;
+    height: auto;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+#negociosBooks{
+    background-color: #f5f5f7;
+    padding: 4rem;
+    text-align: center;
+    border-radius: 10px;
+}
+#bestsellersBooks{
+    background-color: black;
+    border-radius: 10px;
+    padding: 4rem;
+    text-align: center;
+    color: white;
+    text-transform: bold;
+}
+
+#seccionLibrosBest{
+    background: white;
+    border-radius: 10px;
+    padding: 4rem;
+    text-align: center;
+}
+
+#seccionLibrosNeg{
+    background-color: black;
+    border-radius: 10px;
+    padding: 4rem;
+    text-align: center;
+    color: white;
+    text-transform: bold;
+}
+
+.copy {
+    text-align: center;
+    font-size: 0.8rem;
+    color: rgb(0, 0, 0);
+}
+
+.purchase-buttons a {
+    display: inline-block;
+      margin: 0.5rem;
+      padding: 0.3rem 1rem;
+      font-size:1rem;
+      border-radius: 10px;
+      text-decoration: none;
+}
+.masInfo{
+  background-color: #007aff;
+  color: white;
+}
+.pagarLibro{
+    background-color: white;
+    border-color: #007aff;
+    border-width: 0.1rem;
+    border-style: solid;
+    color: #007aff;
+}
+
+.pagarLibroBlack{
+    background-color: black;
+    border-color: #007aff;
+    border-width: 0.1rem;
+    border-style: solid;
+    color: #007aff;
+}
+/* CATEGORIA BESTSELLERS */
+
+.categoriaBestsellers{
+  display: flex;
+  align-items: center;
+  background-color: white;
+  border-color: black;
+  border-radius: 15px;
+  padding: 10px;
+  margin-bottom: 15px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+.categoriaTitulo{
+  font-size: 1.2rem;
+  margin: 0;
+  color: black;
+}
+.categriaFrase{
+  font-size: 1rem;
+  margin: 0.5rem 0;
+  color: gray;
+}
+.imagenPortada {
+  width: 140px;
+  height: auto;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+.muestraLibro{
+  background-color: gray;
+  color: white;
+}
+
+    .contador {
+      font-size: 1rem;
+      color: #333;
+      margin-bottom: 2rem;
+    }
+
+    .contador span {
+      font-size: 0.9rem;
+      color: #007aff;
+      margin-left: 1px;
+    }
+/* LIBROS PAGINA DE VENTA -----INVESTIGAR SI FUNCIONA O ELIMINAR */
+
+#libro{
+    background: radial-gradient(circle,rgba(233, 238, 174, 1) 0%, rgba(255, 215, 115, 1) 100%);
+    padding: 3rem;
+    text-align: center;
+}
+
+
+/* PAGINA INDIVIDUAL*/
+.imagenPortadaVenta{
+    width: 280px;
+    height: auto;
+    border-radius: 5px;
+}
+
+.ventaEbook{
+    background: white;
+    padding: 4rem;
+    text-align: center;
+}
+
+.informacionEbookVenta{
+    padding: 0.2rem;
+    margin-top: 5rem;
+    background-color: white;
+    border-radius: 10px;
+}
+.publicacionEbook{
+    font-size: 0.9rem;
+    color: rgb(57, 55, 55);
+    margin-top: 0.5rem;
+}
+.descripcionVentaLibro{
+    background-color: black;
+    padding: 3rem;
+    margin-top: 0.1rem;
+    text-align: center;
+    border-radius: 10px;
+}
+ .descripcionEbook{
+    font-size: 1.5rem;
+    color:white;
+    margin-top: 0.5rem;
+    line-height: 1.5;
+    text-align: justify;
+ }
+
+ /*Transferencia Bancaria*/
+ .transferencia{
+    padding: 2rem;
+    border-radius: 10px;
+    margin-top: 2rem;
+    text-align: center;
+ }
+ 
+ .transferenciaBancaria{
+    width: 300px;
+    height: auto;
+    border-radius: 5px;
+    margin-right: 10px;
+}
