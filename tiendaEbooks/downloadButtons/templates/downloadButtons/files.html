@@ -1,0 +1,13 @@
+<h2>Archivos disponibles</h2>
+<ul>
+  {% for file in files %}
+    <li>
+      {{ file.name }} — {{ file.download_count }} descargas
+      <a href="{% url 'download_file' file.id %}">
+        <button>📥 Descargar</button>
+      </a>
+    </li>
+  {% empty %}
+    <li>No hay archivos disponibles.</li>
+  {% endfor %}
+</ul>
