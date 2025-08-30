@@ -1,22 +1,29 @@
 from django.shortcuts import render, get_object_or_404
+from .models import Ebook
 from django.http import FileResponse
-from django.utils import timezone
-from .models import File, Download
 
-# Pagina principal
-def index(request):
-    return render(request, "ebookStore/index.html")
+# Página principal
+def home(request):
+    featured_ebooks = Ebook.objects.all()[:6]  # 6 destacados
+    return render(request, "integrarF/home.html", {"ebooks": featured_ebooks})
 
-# Vista para descargar un archivo específico
-def download_file(request, file_id):
-    file_obj = get_object_or_404(File, id=file_id)
+# Página por categoría
+def category(request, category_name):
+    ebooks = Ebook.objects.filter(category=category_name)
+    return render(request, "integrarF/category.html", {"ebooks": ebooks, "category": category_name})
 
-    # Registrar la descarga
-    Download.objects.create(file=file_obj, downloaded_at=timezone.now())
+# Página individual
+def ebook_detail(request, ebook_id):
+    ebook = get_object_or_404(Ebook, id=ebook_id)
+    return render(request, "integrarF/detail.html", {"ebook": ebook})
 
-    # Incrementar contador
-    file_obj.download_count += 1
-    file_obj.save()
-
-    # Retornar archivo al usuario
-    return FileResponse(file_obj.file.open("rb"), as_attachment=True, filename=file_obj.file.name)
+# Descarga
+def download_file(request, ebook_id):
+    ebook = get_object_or_404(Ebook, id=ebook_id)
+    ebook.download_count += 1
+    ebook.save()
+    return FileResponse(
+        ebook.file.open("rb"),
+        as_attachment=True,
+        filename=ebook.title + "." + ebook.file.name.split(".")[-1]
+    )

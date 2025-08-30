@@ -1,0 +1,27 @@
+{%load static %}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Ebook Platform{% endblock %}</title>
+    <link rel="stylesheet" href="{% static 'integrarF/style.css' %}">
+</head>
+<body>
+    <nav class="navbar">
+        <ul>
+            <li><a href="{% url 'home' %}">Inicio</a></li>
+            <li><a href="{% url 'category' 'Negocios' %}">Negocios</a></li>
+            <li><a href="{% url 'category' 'BestSellers' %}">BestSellers</a></li>
+        </ul>
+    </nav>
+
+    <div class="content">
+        {% block content %}{% endblock %}
+    </div>
+
+    <footer>
+        <p>Copyright © 2025 @victorceronl. All rights reserved.</p>
+    </footer>
+</body>
+</html>
