@@ -21,4 +21,5 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('ebookStore/', include("ebookStore.urls")),
     path("downloadButtons/", include("downloadButtons.urls")),
+    path("integrarF/", include("integrarF.urls")),
 ]

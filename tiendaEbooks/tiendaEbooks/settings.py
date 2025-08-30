@@ -32,6 +32,7 @@ ALLOWED_HOSTS = []
 
 INSTALLED_APPS = [
     'ebookStore',
+    'integrarF',
     'downloadButtons',
     'django.contrib.admin',
     'django.contrib.auth',

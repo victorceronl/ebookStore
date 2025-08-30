@@ -1,0 +1,9 @@
+<h2>Archivos disponibles</h2>
+<ul>
+    <li>
+      {{ file.name }} — {{ file.download_count }} descargas
+      <a href="{% url 'Empieza con el Porque' file.id %}">
+        <button>📥 Descargar</button>
+      </a>
+    </li>
+</ul>
