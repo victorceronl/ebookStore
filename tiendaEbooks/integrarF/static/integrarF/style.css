@@ -1,6 +1,8 @@
 .navbar {
-    background-color: #333;
-    padding: 10px;
+    background-color: #131313;
+    color: white;
+    padding: 1rem;
+    text-align: center;
 }
 .navbar ul {
     list-style: none;
