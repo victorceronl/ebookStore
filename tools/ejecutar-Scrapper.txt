@@ -1,0 +1,14 @@
+Paso 1: Preparar el proyecto
+En tu terminal:
+
+mkdir scraping-ebooks
+cd scraping-ebooks
+npm init -y
+npm install axios cheerio
+
+Paso 2: Código de scraping (scrapper-Libreria.js)
+
+Paso 3: Ejecutar
+En la terminal:
+
+node scraping.js
